@@ -1,0 +1,83 @@
+/* indexstyle.css */
+body {
+    background-color: #e9ebee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    margin: 0; 
+}
+
+.container {
+    width: 300px; 
+    max-width: 100%; 
+    margin: 0 auto;
+    padding: 20px;
+    height: 50vh;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    position: relative; 
+    overflow: auto; 
+}
+
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 16px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 2px; 
+    border-radius: 25px;
+    margin-top: 30px;
+    display: block; 
+}
+
+  .fa {
+    display: block; 
+    margin: 0 auto; 
+  }
+
+  span {
+    margin-top: 5px;
+    font-family: sans-serif;
+    display: block; 
+    text-align: center; 
+    text-decoration: none;
+    font-weight: bold; 
+  }
+
+
+.btn:hover {
+    background-color: RoyalBlue;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+p, h1 {
+    margin: 0; 
+}
+
+p {
+    font-size: 18px;
+}
+
+.logout {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #007bff; 
+    font-weight: bold; 
+}
+
+.logout:hover {
+    text-decoration: underline; 
+}

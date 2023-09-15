@@ -1,0 +1,52 @@
+body {
+    background-color: #e9ebee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    margin: 0; /* Menghilangkan margin default body */
+}
+
+.container {
+    width: 300px; /* Ukuran tetap untuk container */
+    max-width: 100%; /* Maksimum lebar sesuai layar */
+    margin: 0 auto;
+    padding: 20px;
+    height: 50vh;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    position: relative; /* Menambahkan posisi relatif untuk kontainer */
+    overflow: auto; /* Menambahkan overflow jika kontennya melebihi ukuran tetap */
+}
+
+.back {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #007bff; /* Warna teks tautan */
+    font-weight: bold; /* Teks lebih tebal */
+}
+
+.back:hover {
+    text-decoration: underline; /* Garis bawah saat dihover */
+}
+
+#cekSaldoBtn {
+    background-color: #007BFF; /* Warna latar belakang */
+    color: #fff; /* Warna teks */
+    padding: 8px 20px; /* Padding untuk ruang di dalam tombol */
+    border: none; /* Hapus garis tepi */
+    border-radius: 5px; /* Tampilan sudut tombol */
+    cursor: pointer; /* Ubah ikon kursor saat diarahkan ke tombol */
+    font-size: 16px; /* Ukuran font teks */
+  }
+
+  /* Gaya saat tombol dihover */
+  #cekSaldoBtn:hover {
+    background-color: #0056b3; /* Warna latar belakang saat dihover */
+  }
