@@ -15,13 +15,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         die("Koneksi database gagal: " . $conn->connect_error);
     }
 
-    $sql = "SELECT id, password FROM nasabah WHERE email = '$email'";
+    $sql = "SELECT id, no_rekening, password FROM nasabah WHERE email = '$email'";
     $result = $conn->query($sql);
 
     if ($result->num_rows == 1) {
         $row = $result->fetch_assoc();
         if (password_verify($password, $row['password'])) {
             $_SESSION['user_id'] = $row['id'];
+            $_SESSION['no_rekening'] = $row['no_rekening'];
             header('Location: index.php');
             exit;
         } else {
@@ -33,6 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $conn->close();
 }
+
 ?>
 
 <!DOCTYPE html>

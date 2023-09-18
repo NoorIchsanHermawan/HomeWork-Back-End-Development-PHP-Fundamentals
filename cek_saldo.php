@@ -39,6 +39,7 @@ $conn->close();
         <p><?php echo $nama_nasabah; ?></p>
         <p>No Rekening : <?php echo $no_rekening; ?></p>
         <button id="cekSaldoBtn">Cek Saldo</button>
+        <button id="cekTransBtn">Cek Transaksi</button>
         <p id="saldoResult"></p>
         <a href="index.php" class="back">Kembali ke Dashboard</a>
     </div>
@@ -63,6 +64,9 @@ $conn->close();
                     console.error("Error:", error);
                     document.getElementById("saldoResult").textContent = "Gagal mengambil saldo.";
                 });
+        });
+        document.getElementById('cekTransBtn').addEventListener('click', function () {
+            window.location.href = 'cek_trans.php';
         });
 
     </script>

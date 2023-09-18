@@ -47,6 +47,21 @@ body {
   }
 
   /* Gaya saat tombol dihover */
-  #cekSaldoBtn:hover {
+#cekSaldoBtn:hover {
+    background-color: #0056b3; /* Warna latar belakang saat dihover */
+  }
+
+#cekTransBtn {
+    background-color: #007BFF; /* Warna latar belakang */
+    color: #fff; /* Warna teks */
+    padding: 8px 20px; /* Padding untuk ruang di dalam tombol */
+    border: none; /* Hapus garis tepi */
+    border-radius: 5px; /* Tampilan sudut tombol */
+    cursor: pointer; /* Ubah ikon kursor saat diarahkan ke tombol */
+    font-size: 16px; /* Ukuran font teks */
+  }
+
+  /* Gaya saat tombol dihover */
+#cekTransBtn:hover {
     background-color: #0056b3; /* Warna latar belakang saat dihover */
   }
