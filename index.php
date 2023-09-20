@@ -46,6 +46,7 @@ $conn->close();
             Info
         </a> -->
         <button class="btn" id="cekSaldoButton"><i class="fa fa-user"><span>Info</span></i></button>
+        <button class="btn" id="transferButton"><i class="fa fa-user"><span>Transfer</span></i></button>
         <!--<button class="btn"><i class="fa fa-bars"></i></button>
         <button class="btn"><i class="fa fa-trash"></i></button>
         <button class="btn"><i class="fa fa-close"></i></button>
@@ -56,6 +57,11 @@ $conn->close();
         document.getElementById('cekSaldoButton').addEventListener('click', function () {
             // Redirect ke halaman cek_saldo.php
             window.location.href = 'cek_saldo.php';
+    });
+
+    document.getElementById('transferButton').addEventListener('click', function () {
+            // Redirect ke halaman transfer.php
+            window.location.href = 'transfer.php';
     });
     </script>
 </body>
